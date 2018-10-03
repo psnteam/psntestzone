@@ -33,7 +33,7 @@ WebUI.maximizeWindow()
 
 for (boolean mode in loginMode) {		
 	def passwd = 'testit123'
-	def IDs = ['alshverhage@psnpay.com']
+	def IDs = ['sthao@psnpay.com']
 	
 	for (String id in IDs) {
 		boolean managerLogin = TestLinks.login21(mode, id, passwd)	
@@ -141,7 +141,7 @@ class TestLinks {
 	
 				WebUI.setText(findTestObject('ManagerLogin21/input_ctl00ContentPlaceHolder1'), 'sthao')
 	
-				WebUI.setText(findTestObject('ManagerLogin21/input_ctl00ContentPlaceHolder1_1'), 'letmein')
+				WebUI.setText(findTestObject('ManagerLogin21/input_ctl00ContentPlaceHolder1_1'), 'testitagain')
 	
 				WebUI.click(findTestObject('ManagerLogin21/a_Login'))
 	
