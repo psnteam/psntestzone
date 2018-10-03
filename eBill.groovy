@@ -37,7 +37,7 @@ for (def email in emails) {
 	eBillSignUp(email, EbillOptions.OptIntoElectronicBills)
 } 
 
-public void eBillSignUp(def email, def action) {
+public void eBillSignUp(def email, def option) {
 	
 	WebUI.click(findTestObject('Object Repository/eBills/Page_PSN - Your Complete PAYMENT BI/a_CustomerTracker'))
 	
@@ -67,7 +67,7 @@ public void eBillSignUp(def email, def action) {
 	WebUI.click(findTestObject('Object Repository/eBills/Page_PSN - Your Complete PAYMENT BI/a_Billing Options'))
 	
 	try {
-		switch (action) {
+		switch (option) {
 			case EbillOptions.OptOutofElectronicBills:
 				WebUI.click(findTestObject('Object Repository/eBills/Page_PSN - Your Complete PAYMENT BI/a_Opt Out of Electronic Bills'))
 				break
