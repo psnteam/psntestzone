@@ -32,7 +32,7 @@ WebUI.openBrowser('')
 WebUI.maximizeWindow()
 
 for (boolean mode in loginMode) {		
-	def passwd = 'letmein'
+	def passwd = 'testit123'
 	def IDs = ['alshverhage@psnpay.com']
 	
 	for (String id in IDs) {
