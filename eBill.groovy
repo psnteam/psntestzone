@@ -105,6 +105,8 @@ def eBillSignUp(String email, EbillOptions option) {
 			case EbillOptions.OptIntoPaperBills:
 				WebUI.click(findTestObject('Object Repository/eBills/Page_PSN - Your Complete PAYMENT BI/a_Opt Into Paper Bills'))
 				break
+			default:
+				println("Invalid option!")
 		}		
 	} catch (StepFailedException ex) {}
 	
